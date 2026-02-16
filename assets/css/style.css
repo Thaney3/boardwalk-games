@@ -2,8 +2,6 @@
 /* Inter, sans-serif | Macondo, cursive */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap");
 
-/* Global styles */
-
 /* CSS Variables */
 :root {
   /* Font variables */
@@ -17,6 +15,7 @@
   --highlight-colour-light: #7a9fc2; /* light blue */
 }
 
+/* Global styles */
 body {
   font-family: var(--primary-font);
 }
@@ -26,10 +25,16 @@ h2,
 h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .sub-heading-colour {
   color: var(--highlight-colour);
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Navbar */
@@ -40,6 +45,12 @@ h3 {
 
 #navbar .logo {
   width: 30px;
+}
+
+/* Header */
+
+#header .lead {
+  font-family: var(--secondary-font);
 }
 
 /* grid visualisation CSS for testing */
