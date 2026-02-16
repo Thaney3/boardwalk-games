@@ -44,11 +44,12 @@
 
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
+    
     <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar"class="navbar navbar-expand-lg" data-bs-theme="dark">  <!-- data-bs-theme="dark" inverts colours for contrast -->
       <div class="container">
-        <a class="navbar-brand" href="index.html">Navbar</a>
+        <!-- Logo that also acts as home link -->
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo" ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,6 +62,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- ms-auto places links to the right -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             
             <li class="nav-item">
