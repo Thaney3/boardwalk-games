@@ -66,7 +66,7 @@ h2 {
   padding: 7px 25px;
 }
 
-.custom-button-outline:hover {  
+.custom-button-outline:hover {
   background-color: var(--highlight-colour);
   color: white;
 }
@@ -98,6 +98,15 @@ h2 {
   color: var(--highlight-colour);
   background-color: transparent;
 }
+
+/* Events */
+
+#events #student-discount {
+  background-color: var(--highlight-colour);
+  color: white;
+  padding: 5px 20px;
+}
+
 
 /* Game library cards */
 
@@ -144,6 +153,19 @@ h2 {
 
 /* Media Queries */
 
+/* Extra small devices (small phones less than 576px) */
+
+@media screen and (max-width: 576px) {
+  /* To prevent table overflow in events section */
+  #events .table {
+    font-size: 0.8rem;
+  }
+  /* To make student discount text fit better on small screens */
+  #events #student-discount {
+    font-size: 0.9rem;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
@@ -167,7 +189,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   /* To make all services cards the same height */
   #services .card-body {
-    min-height: 220px;  /* 217 on my screen */
+    min-height: 220px; /* 217 on my screen */
   }
 }
 
