@@ -397,61 +397,61 @@
               <div class="row">
                 <!-- Full name -->
                 <div class="mb-3 col-xl-4">
-                  <label for="name" class="form-label">Full name</label>
+                  <label id="reserve-name-label" for="reserve-name" class="form-label">Full name</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="name"
+                    id="reserve-name"
                     name="name"
-                    aria-describedby="input for your full name"
+                    aria-labelledby="reserve-name-label"
                     required
                   />
                 </div>
                 <!-- Phone number -->
                 <div class="mb-3 col-xl-4">
-                  <label for="number" class="form-label">Phone number</label>
+                  <label id="reserve-number-label" for="reserve-number" class="form-label">Phone number</label>
                   <input
                     type="number"
                     class="form-control"
-                    id="number"
+                    id="reserve-number"
                     name="number"
-                    aria-describedby="input for your phone number"
+                    aria-labelledby="reserve-number-label"
                     required
                   />
                 </div>
                 <!-- Email address -->
                 <div class="mb-3 col-xl-4">
-                  <label for="email" class="form-label">Email address</label>
+                  <label id="reserve-email-label" for="reserve-email" class="form-label">Email address</label>
                   <input
                     type="email"
                     class="form-control"
-                    id="email"
+                    id="reserve-email"
                     name="email"
-                    aria-describedby="input for your email address"
+                    aria-labelledby="reserve-email-label"
                     required
                   />
                 </div>
                 <!-- Game selection dropdown menu  -->
                 <div class="mb-3 col-xl-8">
-                  <label for="select-game" class="form-label"
+                  <label id="select-game-label" for="select-game" class="form-label"
                     >Select game</label
                   >
                   <select
                     class="form-select"
                     id="select-game"
                     name="select-game"
-                    aria-describedby="A list of games to select for reservation"
+                    aria-labelledby="select-game-label"
                     required
                   >
                     <option value="" selected>Select game</option>
                     <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                    <option value="galaxy-pioneers">Mystic Woods</option>
-                    <option value="galaxy-pioneers">Captain's Gambit</option>
-                    <option value="galaxy-pioneers">Critter Quest</option>
-                    <option value="galaxy-pioneers">Setters of Catan</option>
-                    <option value="galaxy-pioneers">Monopoly</option>
-                    <option value="galaxy-pioneers">Exploding Kittens</option>
-                    <option value="galaxy-pioneers">Cluedo</option>
+                    <option value="mystic-woods">Mystic Woods</option>
+                    <option value="captains-gambit">Captain's Gambit</option>
+                    <option value="critter-quest">Critter Quest</option>
+                    <option value="settlers-of-catan">Settlers of Catan</option>
+                    <option value="monopoly">Monopoly</option>
+                    <option value="exploding-kittens">Exploding Kittens</option>
+                    <option value="cluedo">Cluedo</option>
                   </select>
                 </div>
                 <!-- Requested date -->
@@ -463,8 +463,7 @@
                     type="date"
                     class="form-control"
                     id="requested-date"
-                    name="requested-date"
-                    value="dd/mm/yyyy"              
+                    name="requested-date"              
                     required
                   />
                 </div>
