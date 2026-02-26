@@ -18,6 +18,7 @@
 /* Global styles */
 body {
   font-family: var(--primary-font);
+  padding-top: 60px; /* pushes content down to make space for the navbar */
 }
 
 h1,
