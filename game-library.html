@@ -381,6 +381,103 @@
           </div>
         </div>
       </section>
+
+      <!-- Reserve a game section -->
+      <section id="reserve-game" class="container section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h2 class="text-center">Reserve a game</h2>
+            <p>
+              Reserve a board game for your next visit to Boardwalk Games. Pick
+              your challenge, and let the adventure begin! Fill out your details
+              and preferred game below, and we'll have it set aside for you when
+              you arrive.
+            </p>
+            <form action="success.html" method="get">
+              <div class="row">
+                <!-- Full name -->
+                <div class="mb-3 col-xl-4">
+                  <label for="name" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    aria-describedby="input for your full name"
+                    required
+                  />
+                </div>
+                <!-- Phone number -->
+                <div class="mb-3 col-xl-4">
+                  <label for="number" class="form-label">Phone number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="number"
+                    name="number"
+                    aria-describedby="input for your phone number"
+                    required
+                  />
+                </div>
+                <!-- Email address -->
+                <div class="mb-3 col-xl-4">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    aria-describedby="input for your email address"
+                    required
+                  />
+                </div>
+                <!-- Game selection dropdown menu  -->
+                <div class="mb-3 col-xl-8">
+                  <label for="select-game" class="form-label"
+                    >Select game</label
+                  >
+                  <select
+                    class="form-select"
+                    id="select-game"
+                    name="select-game"
+                    aria-describedby="A list of games to select for reservation"
+                    required
+                  >
+                    <option value="" selected>Select game</option>
+                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                    <option value="galaxy-pioneers">Mystic Woods</option>
+                    <option value="galaxy-pioneers">Captain's Gambit</option>
+                    <option value="galaxy-pioneers">Critter Quest</option>
+                    <option value="galaxy-pioneers">Setters of Catan</option>
+                    <option value="galaxy-pioneers">Monopoly</option>
+                    <option value="galaxy-pioneers">Exploding Kittens</option>
+                    <option value="galaxy-pioneers">Cluedo</option>
+                  </select>
+                </div>
+                <!-- Requested date -->
+                <div class="mb-3 col-xl-4">
+                  <label for="requested-date" class="form-label"
+                    >Requested date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="requested-date"
+                    name="requested-date"
+                    value="dd/mm/yyyy"              
+                    required
+                  />
+                </div>
+                <div class="mb-3 d-grid justify-content-end">
+                  <button type="submit" class="btn custom-button-outline mt-3">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
